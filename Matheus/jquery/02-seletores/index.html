@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Jquery</title>
+    <script src="../inicio/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            //substituindo o getElementByTagName:
+            let tag = $("input").val();
+            //substituindo o getElementById:
+            let id = $("#titulo").html();
+            //substituindo o getElementByClass:
+            let classe = $(".paragrafo").html();
+
+            alert(tag)
+            alert(id)
+            alert(classe)
+        })
+    </script>
+</head>
+<body>
+    <input type="text" value="Nome">
+    <h1 id="titulo">Título</h1>
+    <p class="paragrafo">Parágrafo</p>
+
+</body>
+</html>

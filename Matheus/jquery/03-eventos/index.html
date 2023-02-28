@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script src="../inicio/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Aqui está sendo definido o que vai fazer o evento disparar
+            $("button").click(function(){
+                //Agora a ação que deve ser feita:
+                $("h1").html("Novo título") 
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--Nesse exemplo o texto do título será aplicado através de jquery-->
+    <h1></h1>
+    <button>Clique</button>
+</body>
+</html>
